@@ -232,5 +232,50 @@
   }
 }
 
+/* Sponsor Section Responsive Styles */
+@media (max-width: 991px) {
+  .sponsor-category {
+    padding: 20px;
+  }
+  
+  .sponsor-item {
+    flex: 0 0 150px;
+  }
+  
+  .category-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sponsor-logos {
+    gap: 20px;
+  }
+  
+  .sponsor-item {
+    flex: 0 0 120px;
+    padding: 10px;
+  }
+  
+  .category-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsor-category {
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .sponsor-item {
+    flex: 0 0 100px;
+  }
+  
+  .sponsor-logos {
+    gap: 15px;
+  }
+}
+
 
 

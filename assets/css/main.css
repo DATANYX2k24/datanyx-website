@@ -214,7 +214,7 @@ ol li {
   color: #fff;
 }
 
-.overlay {
+.dispoverlay {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2618,7 +2618,7 @@ footer {
   position: relative;
 }
 
-#hero-area .overlay {
+#hero-area .dispoverlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2738,13 +2738,12 @@ div#clock {
 @media (max-width: 720px) {
   .hero-area-bg {
     /* background: url(../img/hero-area.jpg) no-repeat; */
-    background: url(../img/background/mobileback.png) no-repeat !important;
-    background-size: cover !important;
+    /* background: url(../img/background/mobileback.png) no-repeat ; */
+    /* background-size: cover !important; */
     background-position: center;
     height: 100vh;
   }
 
-  #hero-register {}
 
  
   #hero-area .contents .banner-btn {
@@ -2755,13 +2754,11 @@ div#clock {
 @media (max-width: 445px) {
   .hero-area-bg {
     /* background: url(../img/hero-area.jpg) no-repeat; */
-    background: url(../img/background/mobileback.png) no-repeat !important;
+    /* background: url(../img/background/mobileback.png) no-repeat !important; */
     background-size: cover;
     background-position: center;
     height: 100vh;
   }
-
-  #hero-register {}
 
   #hero-area .contents .banner-btn {
     margin-top: 0px;
@@ -3138,4 +3135,173 @@ li.stylish-list {
      text-align: center;
   }
 
+}
+
+/* Sponsors Section Styles */
+#sponsors {
+  background: #f9f9f9;
+  position: relative;
+}
+
+.sponsor-category {
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.sponsor-category:hover {
+  transform: translateY(-5px);
+}
+
+.category-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.category-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #00b4d9;
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.sponsor-item {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.sponsor-item:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.sponsor-item img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+  border-radius: 2px;
+
+}
+
+.sponsor-item:hover img {
+  filter: grayscale(100%);
+}
+
+/* Animation classes */
+.wow {
+  visibility: hidden;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+
+.button2 {
+  position: relative;
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ff00dd;
+  background-color: #ff00dd;
+  overflow: hidden;
+}
+
+.button2, .button2__icon, .button2__text {
+  transition: all 0.3s;
+}
+
+.button2 .button2__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button2 .button2__icon {
+  position: absolute;
+  transform: translateX(200px);
+  height: 100%;
+  width: 39px;
+  background-color: #ff00dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button2 .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button2:hover {
+  background: #ff00dd;
+}
+
+.button2:hover .button2__text {
+  color: transparent;
+}
+
+.button2:hover .button2__icon {
+  width: 148px;
+  transform: translateX(100px);
+}
+
+.button2:active .button2__icon {
+  background-color: #ff00dd;
+}
+
+.button2:active {
+  border: 1px solid #ff00dd;
+}
+
+.dwonload_box{
+   
+   background-color: #000;
+   justify-content: center;
+   display: flex;
 }
