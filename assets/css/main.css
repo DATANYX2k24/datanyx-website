@@ -2395,7 +2395,7 @@ footer {
   position: relative;
   top: -40px;
   z-index: 999;
-  display: inline-block;
+  display: none;
   width: 100%;
   justify-content: center !important;
 }
