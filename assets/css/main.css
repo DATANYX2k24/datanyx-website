@@ -583,7 +583,7 @@ a.back-to-top:focus {
 }
 
 #page-banner-area {
-  background: url(../img/background/back3.png) no-repeat;
+  background: url(../img/background/back.png) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2606,7 +2606,7 @@ footer {
 ========================================================================== */
 .hero-area-bg {
   /* background: url(../img/hero-area.jpg) no-repeat; */
-  background: url(../img/background/back3.png) no-repeat;
+  background: url(../img/background/back.png) no-repeat;
   background-size: cover;
   background-position: center center;
   height: 110vh;
